@@ -1,0 +1,7 @@
+curl -u admin:1168ec738032e90a4345b736377b9a4318 \
+-X POST http://54.209.177.235:8080/pluginManager/installNecessaryPlugins \
+-H 'Content-Type: text/xml' \
+-d '<jenkins><install plugin="emotional-jenkins-plugin@1.2" /></jenkins>'
+
+curl -u admin:1168ec738032e90a4345b736377b9a4318 -X POST -d '<jenkins><install plugin="emotional-jenkins-plugin@1.2" /></jenkins>' --header 'C
+ontent-Type: text/xml' http://localhost:8080/pluginManager/installNecessaryPlugins
